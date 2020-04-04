@@ -1,5 +1,5 @@
 export default {
-  'official-website': 'Motrix 웹사이트',
+  'official-website': 'VDownloader 웹사이트',
   'manual': '메뉴얼',
   'release-notes': '배포 정보...',
   'report-problem': '문제 보고',

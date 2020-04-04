@@ -13,7 +13,7 @@ export default class ProtocolManager extends EventEmitter {
     // options.protocols: { 'magnet': true, 'thunder': false }
     this.protocols = {
       mo: true,
-      motrix: true,
+      vdownloader: true,
       ...options.protocols
     }
 
@@ -39,7 +39,7 @@ export default class ProtocolManager extends EventEmitter {
   }
 
   handle (url) {
-    logger.info(`[Motrix] protocol url: ${url}`)
+    logger.info(`[VDownloader] protocol url: ${url}`)
 
     if (
       url.toLowerCase().startsWith('magnet:') ||
@@ -50,7 +50,7 @@ export default class ProtocolManager extends EventEmitter {
 
     if (
       url.toLowerCase().startsWith('mo:') ||
-      url.toLowerCase().startsWith('motrix:')
+      url.toLowerCase().startsWith('vdownloader:')
     ) {
       return this.handleMoProtocol(url)
     }
@@ -67,7 +67,7 @@ export default class ProtocolManager extends EventEmitter {
   handleMoProtocol (url) {
     const parsed = new URL(url)
     const { host } = parsed
-    logger.info('[Motrix] protocol parsed:', parsed, host)
+    logger.info('[VDownloader] protocol parsed:', parsed, host)
 
     const command = protocolMap[host]
     if (!command) {

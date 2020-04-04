@@ -1,5 +1,5 @@
 export default {
-  'app': 'Motrix',
+  'app': 'VDownloader',
   'file': 'File',
   'task': 'Task',
   'edit': 'Edit',

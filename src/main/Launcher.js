@@ -74,15 +74,15 @@ export default class Launcher extends EventEmitter {
   /**
    * handleOpenUrl
    * Event 'open-url' macOS only
-   * "name": "Motrix Protocol",
-   * "schemes": ["mo", "motrix"]
+   * "name": "VDownloader Protocol",
+   * "schemes": ["mo", "vdownloader"]
    */
   handleOpenUrl () {
     if (is.mas() || !is.macOS()) {
       return
     }
     app.on('open-url', (event, url) => {
-      logger.info(`[Motrix] open-url: ${url}`)
+      logger.info(`[VDownloader] open-url: ${url}`)
       event.preventDefault()
       this.url = url
       this.sendUrlToApplication()
@@ -99,7 +99,7 @@ export default class Launcher extends EventEmitter {
       return
     }
     app.on('open-file', (event, path) => {
-      logger.info(`[Motrix] open-file: ${path}`)
+      logger.info(`[VDownloader] open-file: ${path}`)
       event.preventDefault()
       this.file = path
       this.sendFileToApplication()
@@ -167,7 +167,7 @@ export default class Launcher extends EventEmitter {
 
     app.on('activate', () => {
       if (global.application) {
-        logger.info('[Motrix] activate')
+        logger.info('[VDownloader] activate')
         global.application.showPage('index')
       }
     })
@@ -175,7 +175,7 @@ export default class Launcher extends EventEmitter {
 
   handleAppWillQuit () {
     app.on('will-quit', () => {
-      logger.info('[Motrix] will-quit')
+      logger.info('[VDownloader] will-quit')
       if (global.application) {
         global.application.stop()
       }

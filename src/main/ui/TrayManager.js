@@ -66,7 +66,7 @@ export default class TrayManager extends EventEmitter {
 
   init () {
     tray = new Tray(this.normalIcon)
-    tray.setToolTip('Motrix')
+    tray.setToolTip('VDownloader')
   }
 
   handleEvents () {

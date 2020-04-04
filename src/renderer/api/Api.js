@@ -97,7 +97,7 @@ export default class Api {
   savePreferenceToNativeStore (params = {}) {
     const { user, system, others } = separateConfig(params)
     if (!isEmpty(system)) {
-      console.info('[Motrix] save system config: ', system)
+      console.info('[VDownloader] save system config: ', system)
       ipcRenderer.send('command', 'application:save-preference', {
         system
       })
@@ -105,14 +105,14 @@ export default class Api {
     }
 
     if (!isEmpty(user)) {
-      console.info('[Motrix] save user config: ', user)
+      console.info('[VDownloader] save user config: ', user)
       ipcRenderer.send('command', 'application:save-preference', {
         user
       })
     }
 
     if (!isEmpty(others)) {
-      console.info('[Motrix] save config found illegal key: ', others)
+      console.info('[VDownloader] save config found illegal key: ', others)
     }
   }
 

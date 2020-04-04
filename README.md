@@ -6,54 +6,54 @@
 
 ## A full-featured download manager
 
-[![GitHub release](https://img.shields.io/github/release/agalwood/Motrix.svg)](https://github.com/agalwood/Motrix/releases) [![Build Status](https://travis-ci.org/agalwood/Motrix.svg?branch=master)](https://travis-ci.org/agalwood/Motrix) [![Build status](https://ci.appveyor.com/api/projects/status/l11d5h05xwwcvoux/branch/master?svg=true)](https://ci.appveyor.com/project/agalwood/motrix/branch/master) [![Total Downloads](https://img.shields.io/github/downloads/agalwood/Motrix/total.svg)](https://github.com/agalwood/Motrix/releases) ![Support Platforms](https://camo.githubusercontent.com/a50c47295f350646d08f2e1ccd797ceca3840e52/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f706c6174666f726d2d6d61634f5325323025374325323057696e646f77732532302537432532304c696e75782d6c69676874677265792e737667)
+[![GitHub release](https://img.shields.io/github/release/agalwood/VDownloader.svg)](https://github.com/agalwood/VDownloader/releases) [![Build Status](https://travis-ci.org/agalwood/VDownloader.svg?branch=master)](https://travis-ci.org/agalwood/VDownloader) [![Build status](https://ci.appveyor.com/api/projects/status/l11d5h05xwwcvoux/branch/master?svg=true)](https://ci.appveyor.com/project/agalwood/vdownloader/branch/master) [![Total Downloads](https://img.shields.io/github/downloads/agalwood/VDownloader/total.svg)](https://github.com/agalwood/VDownloader/releases) ![Support Platforms](https://camo.githubusercontent.com/a50c47295f350646d08f2e1ccd797ceca3840e52/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f706c6174666f726d2d6d61634f5325323025374325323057696e646f77732532302537432532304c696e75782d6c69676874677265792e737667)
 
 English | [简体中文](./README-CN.md)
 
-Motrix is a full-featured download manager that supports downloading HTTP, FTP, BitTorrent, Magnet, Baidu Net Disk, etc.
+VDownloader is a full-featured download manager that supports downloading HTTP, FTP, BitTorrent, Magnet, Baidu Net Disk, etc.
 
-Motrix has a clean and easy to use interface. I hope you will like it 👻.
+VDownloader has a clean and easy to use interface. I hope you will like it 👻.
 
-✈️ [Official Website](https://motrix.app) | 📖 [Manual](https://github.com/agalwood/Motrix/wiki)
+✈️ [Official Website](https://vdownloader.app) | 📖 [Manual](https://github.com/agalwood/VDownloader/wiki)
 
 ## 💽 Installation
 
-Download from [GitHub Releases](https://github.com/agalwood/Motrix/releases) and install it.
+Download from [GitHub Releases](https://github.com/agalwood/VDownloader/releases) and install it.
 
 ### Windows
 
-It is recommended to install Motrix using the installation package (Motrix-Setup-x.y.z.exe) to ensure a complete experience, such as associating torrent files, capturing magnet links, etc.
+It is recommended to install VDownloader using the installation package (VDownloader-Setup-x.y.z.exe) to ensure a complete experience, such as associating torrent files, capturing magnet links, etc.
 
-If you prefer the portable version, you can use [scoop](https://github.com/lukesampson/scoop) (need Windows 7+) to install Motrix.
+If you prefer the portable version, you can use [scoop](https://github.com/lukesampson/scoop) (need Windows 7+) to install VDownloader.
 
 ```bash
 scoop bucket add extras
-scoop install motrix
+scoop install vdownloader
 ```
 
 ### macOS
 
-The macOS users can install Motrix using `brew cask`, thanks to [PR](https://github.com/Homebrew/homebrew-cask/pull/59494) of [Mitscherlich](https://github.com/Mitscherlich).
+The macOS users can install VDownloader using `brew cask`, thanks to [PR](https://github.com/Homebrew/homebrew-cask/pull/59494) of [Mitscherlich](https://github.com/Mitscherlich).
 
 ```bash
-brew update && brew cask install motrix
+brew update && brew cask install vdownloader
 ```
 
 ### Linux
 
-You can download the AppImage (for all Linux distributions) package or snap or just build from source code to install Motrix.
+You can download the AppImage (for all Linux distributions) package or snap or just build from source code to install VDownloader.
 
 Please read the **Build** section.
 
-For Arch Linux users, Motrix is available in [aur](https://aur.archlinux.org/packages/motrix/), thanks to the maintainer [weearc](https://github.com/weearc).
+For Arch Linux users, VDownloader is available in [aur](https://aur.archlinux.org/packages/vdownloader/), thanks to the maintainer [weearc](https://github.com/weearc).
 
 Run the following command to install:
 
 ```bash
-yay motrix
+yay vdownloader
 ```
 
-Motrix may need to run with `sudo` for the first time in Linux because there is no permission to create the download session file (`/var/cache/aria2.session`).
+VDownloader may need to run with `sudo` for the first time in Linux because there is no permission to create the download session file (`/var/cache/aria2.session`).
 
 ## ✨ Features
 
@@ -75,20 +75,20 @@ Motrix may need to run with `sudo` for the first time in Linux because there is 
 
 ## 🖥 User Interface
 
-![motrix-screenshot-task-en.png](https://cdn.nlark.com/yuque/0/2019/png/129147/1550151166169-94b4bfb0-746e-42b8-aad7-0b6890f89abb.png)
+![vdownloader-screenshot-task-en.png](https://cdn.nlark.com/yuque/0/2019/png/129147/1550151166169-94b4bfb0-746e-42b8-aad7-0b6890f89abb.png)
 
 ## ⌨️ Development
 
 ### Clone Code
 
 ```bash
-git clone git@github.com:agalwood/Motrix.git
+git clone git@github.com:onevn-top/VDownloader.git
 ```
 
 ### Install Dependencies
 
 ```bash
-cd Motrix
+cd VDownloader
 npm install
 ```
 
@@ -120,7 +120,7 @@ After building, the application will be found in the project's `release` directo
 
 ## ☑️ TODO
 
-Development Roadmap see: [Trello](https://trello.com/b/qNUzA0bv/motrix)
+Development Roadmap see: [Trello](https://trello.com/b/qNUzA0bv/vdownloader)
 
 ## 🤝 Contribute [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 

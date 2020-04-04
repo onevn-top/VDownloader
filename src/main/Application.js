@@ -237,7 +237,7 @@ export default class Application extends EventEmitter {
     const fileName = basename(filePath)
     readFile(filePath, (err, data) => {
       if (err) {
-        logger.warn(`[Motrix] read file error: ${filePath}`, err.message)
+        logger.warn(`[VDownloader] read file error: ${filePath}`, err.message)
         return
       }
       const file = Buffer.from(data).toString('base64')
@@ -318,12 +318,12 @@ export default class Application extends EventEmitter {
       console.log('application:save-preference.config====>', config)
       const { system, user } = config
       if (!isEmpty(system)) {
-        console.info('[Motrix] main save system config: ', system)
+        console.info('[VDownloader] main save system config: ', system)
         this.configManager.setSystemConfig(system)
       }
 
       if (!isEmpty(user)) {
-        console.info('[Motrix] main save user config: ', user)
+        console.info('[VDownloader] main save user config: ', user)
         this.configManager.setUserConfig(user)
       }
     })
@@ -373,7 +373,7 @@ export default class Application extends EventEmitter {
     })
 
     this.on('application:change-locale', (locale) => {
-      logger.info('[Motrix] application:change-locale===>', locale)
+      logger.info('[VDownloader] application:change-locale===>', locale)
       this.localeManager.changeLanguageByLocale(locale)
         .then(() => {
           this.menuManager.setup(locale)
@@ -436,22 +436,22 @@ export default class Application extends EventEmitter {
     })
 
     this.on('help:official-website', () => {
-      const url = 'https://motrix.app/'
+      const url = 'https://vdownloader.app/'
       shell.openExternal(url)
     })
 
     this.on('help:manual', () => {
-      const url = 'https://motrix.app/manual'
+      const url = 'https://vdownloader.app/manual'
       shell.openExternal(url)
     })
 
     this.on('help:release-notes', () => {
-      const url = 'https://motrix.app/release'
+      const url = 'https://vdownloader.app/release'
       shell.openExternal(url)
     })
 
     this.on('help:report-problem', () => {
-      const url = 'https://motrix.app/report'
+      const url = 'https://vdownloader.app/report'
       shell.openExternal(url)
     })
   }

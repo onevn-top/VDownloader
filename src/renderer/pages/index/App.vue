@@ -21,7 +21,7 @@
   import { getLangDirection } from '@shared/utils'
 
   export default {
-    name: 'Motrix',
+    name: 'VDownloader',
     components: {
       [TitleBar.name]: TitleBar,
       [EngineClient.name]: EngineClient,

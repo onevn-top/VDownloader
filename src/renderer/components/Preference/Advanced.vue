@@ -63,7 +63,7 @@
               v-model="form.allProxyBackup">
             </el-input>
             <div class="el-form-item__info" style="margin-top: 8px;">
-              <a target="_blank" href="https://github.com/agalwood/Motrix/wiki/Proxy" rel="noopener noreferrer">
+              <a target="_blank" href="https://github.com/agalwood/VDownloader/wiki/Proxy" rel="noopener noreferrer">
                 {{ $t('preferences.proxy-tips') }}
                 <mo-icon name="link" width="12" height="12" />
               </a>
@@ -166,7 +166,7 @@
               </i>
             </el-input>
             <div class="el-form-item__info" style="margin-top: 8px;">
-              <a target="_blank" href="https://github.com/agalwood/Motrix/wiki/RPC" rel="noopener noreferrer">
+              <a target="_blank" href="https://github.com/agalwood/VDownloader/wiki/RPC" rel="noopener noreferrer">
                 {{ $t('preferences.rpc-secret-tips') }}
                 <mo-icon name="link" width="12" height="12" />
               </a>

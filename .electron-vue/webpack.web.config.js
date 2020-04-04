@@ -146,7 +146,7 @@ let webConfig = {
       }
     }),
     new HtmlWebpackPlugin({
-      title: 'Motrix',
+      title: 'VDownloader',
       filename: 'index.html',
       chunks: ['index'],
       template: path.resolve(__dirname, '../src/index.ejs'),

@@ -1,4 +1,4 @@
-# Motrix 贡献指南
+# VDownloader 贡献指南
 
 开始贡献之前，确保你已经理解了 [GitHub 的协作流程](https://guides.github.com/introduction/flow/)。
 
@@ -6,7 +6,7 @@
 
 首先你要确定一个语言的英文简写作为 **locale**，如 en-US，这个 locale 值请严格参考 [Electron 的 Locales 文档](https://electronjs.org/docs/api/locales)
 
-Motrix 的国际化分两部分：
+VDownloader 的国际化分两部分：
 
 - Element UI
 - 菜单和主界面
@@ -22,7 +22,7 @@ import eleLocaleZhCN from 'element-ui/lib/locale/lang/zh-CN'
 
 ### 菜单和主界面
 
-Motrix 使用 i18next 作为翻译支持库，所以你可能需要简单了解一下它的[使用方法](https://www.i18next.com/overview/getting-started)。
+VDownloader 使用 i18next 作为翻译支持库，所以你可能需要简单了解一下它的[使用方法](https://www.i18next.com/overview/getting-started)。
 配置文件按照语言 (**locale**) 划分目录：`src/shared/locales`，如：`src/shared/locales/en-US` 和 `src/shared/locales/zh-CN`。
 
 目录里面有按业务模块划分的语言文件

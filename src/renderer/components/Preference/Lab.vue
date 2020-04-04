@@ -26,13 +26,13 @@
           :label-width="formLabelWidth"
         >
           <el-col class="form-item-sub" :span="24">
-            <a target="_blank" href="https://motrix.app/release/BaiduExporter.zip" rel="noopener noreferrer">
+            <a target="_blank" href="https://vdownloader.app/release/BaiduExporter.zip" rel="noopener noreferrer">
               {{ $t('preferences.baidu-exporter') }}
               <mo-icon name="link" width="12" height="12" />
             </a>
             <div class="el-form-item__info" style="margin-top: 8px;">
               {{ $t('preferences.browser-extensions-tips') }}
-              <a target="_blank" href="https://motrix.app/extensions/baidu" rel="noopener noreferrer">
+              <a target="_blank" href="https://vdownloader.app/extensions/baidu" rel="noopener noreferrer">
                 {{ $t('preferences.baidu-exporter-help') }}
               </a>
             </div>

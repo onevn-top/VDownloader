@@ -61,7 +61,7 @@ function init (config) {
 
 store.dispatch('preference/fetchPreference')
   .then((config) => {
-    console.info('[Motrix] fetchPreference===>', config)
+    console.info('[VDownloader] fetchPreference===>', config)
     init(config)
   })
   .catch((err) => {

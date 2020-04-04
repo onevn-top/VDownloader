@@ -92,7 +92,7 @@ const actions = {
     const { gid } = task
     return api.forcePauseTask({ gid })
       .catch((e) => {
-        console.log(`[Motrix] removeTask.forcePauseTask#[${gid}] fail`, e.message)
+        console.log(`[VDownloader] removeTask.forcePauseTask#[${gid}] fail`, e.message)
       })
       .finally(() => {
         return api.removeTask({ gid })

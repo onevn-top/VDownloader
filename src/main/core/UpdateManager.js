@@ -116,7 +116,7 @@ export default class UpdateManager extends EventEmitter {
       ? this.i18n.t('update-error-message')
       : (error.stack || error).toString()
 
-    this.updater.logger.warn(`[Motrix] update-error: ${msg}`)
+    this.updater.logger.warn(`[VDownloader] update-error: ${msg}`)
     dialog.showErrorBox(msg)
   }
 }

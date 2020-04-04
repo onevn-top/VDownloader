@@ -96,7 +96,7 @@ export function checkIsSupportedSchema (url = '') {
   const str = url.toLowerCase()
   if (
     str.startsWith('mo:') ||
-    str.startsWith('motrix:') ||
+    str.startsWith('vdownloader:') ||
     str.startsWith('http:') ||
     str.startsWith('https:') ||
     str.startsWith('ftp:') ||

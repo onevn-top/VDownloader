@@ -9,8 +9,8 @@ assignees: ''
 
 <!--
 反馈之前请搜索一下已有 issues 和 帮助文档，看是否有类似问题可以解决你的问题
-https://github.com/agalwood/Motrix/issues
-http://motrix.app/support
+https://github.com/agalwood/VDownloader/issues
+http://vdownloader.app/support
 
 按以下格式填写反馈信息，谢谢
 -->
@@ -36,7 +36,7 @@ http://motrix.app/support
 **运行环境**
  - 操作系统类型： [如 macOS, Windows, Linux]
  - 具体版本： [如 macOS 10.14.2, Windows 10, Ubuntu 18.04]
- - Motrix 版本： [如 v1.1.3, v1.1.0]
+ - VDownloader 版本： [如 v1.1.3, v1.1.0]
  - 安装包类型：[如 dmg, AppImage]
 
 **更多信息**

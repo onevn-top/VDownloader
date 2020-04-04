@@ -32,7 +32,7 @@ If applicable, add screenshots to help explain your problem.
 **Environment (please complete the following information):**
  - OS & Version: [e.g. macOS, Windows, Linux]
  - Version: [e.g. macOS 10.14.2, Windows 10, Ubuntu 18.04]
- - Motrix Version: [e.g. v1.1.3, v1.1.0]
+ - VDownloader Version: [e.g. v1.1.3, v1.1.0]
  - Installation package type: [e.g. dmg, AppImage]
 
 **Additional context**

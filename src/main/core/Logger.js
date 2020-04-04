@@ -3,6 +3,6 @@ import logger from 'electron-log'
 
 logger.transports.file.level = is.production() ? 'warn' : 'silly'
 logger.info('Logger init')
-logger.warn('[Motrix] Logger init')
+logger.warn('[VDownloader] Logger init')
 
 export default logger
